@@ -251,14 +251,14 @@ int main(int argc, char** argv)
             {
                 outfn1 = prefixfn.substr(0, l-4) + "_msg1" + prefixfn.substr(l-4);
                 outfn2 = prefixfn.substr(0, l-4) + "_msg2" + prefixfn.substr(l-4);
-                unsigned i = 1;
-                while ( fs::exists(fs::path(outfn1)) 
-                        || fs::exists(fs::path(outfn2)))
-                {
-                    outfn1 = prefixfn.substr(0, l-4) + "_msg1_" + std::to_string(i) + prefixfn.substr(l-4);
-                    outfn2 = prefixfn.substr(0, l-4) + "_msg2_" + std::to_string(i) + prefixfn.substr(l-4);
-                    ++i;
-                }
+/*                unsigned i = 1;*/
+                /*while ( fs::exists(fs::path(outfn1)) */
+                        /*|| fs::exists(fs::path(outfn2)))*/
+                /*{*/
+                    /*outfn1 = prefixfn.substr(0, l-4) + "_msg1_" + std::to_string(i) + prefixfn.substr(l-4);*/
+                    /*outfn2 = prefixfn.substr(0, l-4) + "_msg2_" + std::to_string(i) + prefixfn.substr(l-4);*/
+                    /*++i;*/
+                /*}*/
             }
         }
 
